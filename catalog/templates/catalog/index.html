@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Local Library Home
+{% endblock %}
+
+{% block content %}
+    <h2>Local Library Home</h2>
+    <p>Welcome to <em>LocalLibrary</em>, a very basic Django website developed as a tutorial on the Mozilla
+    Development Network</p>
+    <h3>Dynamic Content</h3>
+    <p>The library has the following record counts:</p>
+    <ul>
+        <li><strong>Books: </strong>{{ num_books }}</li>
+        <li><strong>Copies: </strong>{{ num_instances }}</li>
+        <li><strong>Copies Available: </strong>{{ num_instance_available }}</li>
+        <li><strong>Authors: </strong>{{ num_authors }}</li>
+        <li><strong>Genres: </strong>{{ num_genres }}</li>
+        <li><strong>Book title contains the word hands: </strong>{{ book_title_contains }}</li>
+    </ul>
+{% endblock %}
