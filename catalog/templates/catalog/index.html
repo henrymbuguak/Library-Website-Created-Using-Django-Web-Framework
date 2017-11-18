@@ -18,4 +18,7 @@
         <li><strong>Genres: </strong>{{ num_genres }}</li>
         <li><strong>Book title contains the word hands: </strong>{{ book_title_contains }}</li>
     </ul>
+    <p class="tex-info">
+        You have visited this page {{ num_visits }} {% if num_visits == 1 %} time {% else %} times{% endif %}
+    </p>
 {% endblock %}
